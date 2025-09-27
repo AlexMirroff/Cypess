@@ -11,7 +11,7 @@ function getUniqEmail() {
 }
 
 
-describe('Successful sign up', () => {
+describe('Sign up positive', () => {
     beforeEach(() => {
 
         cy.visit("/")
@@ -27,5 +27,14 @@ describe('Successful sign up', () => {
         cy.get("#signupRepeatPassword").type("Aa34567890", { sensitive: true })
         cy.contains("Register").click()
         cy.get("h1").should("have.text", "Garage")
+    })
+
+    it.only('Close sign up pop up', () => {
+
+        cy.contains('Sign up').click()
+        cy.get("h4.modal-title").should("be.visible")
+        cy.get('button.close').click()
+        cy.get("h4.modal-title").should("not.be.visible")
+
     })
 })
