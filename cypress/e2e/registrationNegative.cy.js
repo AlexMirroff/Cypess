@@ -21,7 +21,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("Space inside name")
                 .blur()
                 .next()
@@ -32,7 +31,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("Digit7")
                 .blur()
                 .next()
@@ -43,7 +41,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("Дратути")
                 .blur()
                 .next()
@@ -54,7 +51,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("Name+-")
                 .blur()
                 .next()
@@ -65,7 +61,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("A")
                 .blur()
                 .next()
@@ -76,7 +71,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("ProfessionalDeveloper")
                 .blur()
                 .next()
@@ -87,7 +81,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupName")
-                .click()
                 .type("Professional Developer")
                 .blur()
                 .get(".invalid-feedback > p:first-child")
@@ -126,7 +119,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("Spaces in last name")
                 .blur()
                 .next()
@@ -137,7 +129,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("Digit8")
                 .blur()
                 .next()
@@ -148,7 +139,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("Тест")
                 .blur()
                 .next()
@@ -159,7 +149,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("Name!;")
                 .blur()
                 .next()
@@ -170,7 +159,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("C")
                 .blur()
                 .next()
@@ -181,7 +169,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("ProfessionalDeveloper")
                 .blur()
                 .next()
@@ -192,7 +179,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupLastName")
-                .click()
                 .type("Professional Developer")
                 .blur()
                 .get(".invalid-feedback > p:first-child")
@@ -231,7 +217,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupEmail")
-                .click()
                 .type("test test@gmail.com")
                 .blur()
                 .next()
@@ -242,7 +227,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupEmail")
-                .click()
                 .type("test@gmail.com77")
                 .blur()
                 .next()
@@ -253,7 +237,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupEmail")
-                .click()
                 .type("test@кирилл.com")
                 .blur()
                 .next()
@@ -264,7 +247,6 @@ describe('registration negative cases', () => {
 
             cy.contains('Sign up').click()
             cy.get("#signupEmail")
-                .click()
                 .type("test@gmail.co+m")
                 .blur()
                 .next()
