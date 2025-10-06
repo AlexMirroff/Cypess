@@ -97,7 +97,6 @@ describe("Add fuel expenses", () => {
         AddExpensesForm.verifyAddExpenseBtnDisabled()
     })
 
-
     it("Close pop up with icon", () => {
         SideMenu.openFuelExpensesPage()
         FuelExpenses.openExpensesPopUp()

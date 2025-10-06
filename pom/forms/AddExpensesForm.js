@@ -29,9 +29,6 @@ class AddExpensesForm {
         return cy.get("form > p.alert.alert-danger")
     }
 
-
-
-
     clearAndBlurMilageField() {
         this.milageField.clear().blur()
     }

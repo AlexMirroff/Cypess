@@ -16,7 +16,6 @@ class AddCarForm {
         return cy.get("#addCarModel")
     }
 
-
     focusMilageField() {
         this.milageField.focus()
     }
@@ -60,7 +59,6 @@ class AddCarForm {
     addButtonClick() {
         this.addButton.click()
     }
-
 }
 
 export default new AddCarForm();
